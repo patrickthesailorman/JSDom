@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function(){
   const list = document.querySelector('#book-list ul');
   const forms = document.forms;
 
-  // delete books
+  // delete books from list
   list.addEventListener('click', (e) => {
     if(e.target.className == 'delete'){
       const li = e.target.parentElement;
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function(){
     }
   });
 
-  // add books
+  // add books to list
   const addForm = forms['add-book'];
   addForm.addEventListener('submit', function(e){
     e.preventDefault();
